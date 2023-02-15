@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Gnocchi Primervia Bake- ChazCooks</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/chaz-cooks-logo.png">
+</head>
+
+<body onload="loadPage()">
+  <!-- Navigation -->
+  <nav>
+    <div id="navGrid">
+      <div class="navElement">
+        <a class="navLink" href="index.html">Home</a>
+      </div>
+      <div class="navElement" id="rightNav">
+        <a class="navLink" href="about.html">About</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="resturants.html">Resturants</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="cookbooks.html">Cookbooks</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="gallery.html">Gallery</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="saveForLater.html">Saved</a>
+      </div>
+    </div>
+    <div class="back2Recipes">
+      <a id="backArrow" href="recipes.html">⇦</a>Back to Recipes
+    </div>
+  </nav>
+
+  <!-- Heading -->
+  <h2 id="heading">Gnocchi Primervia Bake</h2>
+  <!-- Main -->
+  <main>
+    <p id="introPara">
+      Super green gnocchi dish, feels healthy with all the veg but is super
+      satisfying with the mozzerella top. If you are tight for time you could
+      serve this all mixed together without baking with some grated cheddar or
+      parmesan on the top.
+    </p>
+    <div class="instructionsGrid">
+      <div>
+        <img class="recipeImagePage" alt="Gnocchi Primervia- baked gnocchi with green veg and mozzerella"
+          src="images/IMG-20221203-WA0048.jpg">
+      </div>
+      <div class="recipePart1">
+        <div class="recipePageHeading">Ingredients</div>
+        <div>Serves 4</div>
+        <ul>
+          <li>1 pack Gnocchi</li>
+          <li>
+            4 cups of any 2 green veg- e.g. courgette, broccoli, beans, peas,
+            leeks
+          </li>
+          <li>4 handfuls of Spinach</li>
+          <li>3 tablespoons Pesto</li>
+          <li>Fresh Mozzerella- used reduced fat</li>
+        </ul>
+      </div>
+
+      <div class="recipePart2">
+        <div class="recipePageHeading">Instructions</div>
+        <p>
+          Preheat the oven to 200°C. Boil the kettle and pour water over
+          gnocchi and leave for 2 mins to soften. Once the 2 minutes are up,
+          drain and put aside.
+        </p>
+
+        <p>
+          Cook green veg. If using: courgette or leeks fry until soft.
+          Broccoli, beans, peas can be steamed or boiled until tender.
+        </p>
+        Add the veg a pan and on a low heat mix in the pesto and spinach, stir
+        until the spinach begins to wilt. Remove from the heat and carefully
+        mix in the gnocchi ensuring it is coated in the pesto.
+        <p>
+          Pour the gnocchi and veg mix into an ovenproof dish. Tear the
+          mozzerella and scatter on top. Bake in the oven for 20-25mins until
+          the mozzerella has gone slightly brown. Enjoy!
+        </p>
+      </div>
+    </div>
+  </main>
+  <div id="buttonGrid">
+    <button id="saveButton" type="submit" onclick="savePage()">
+      save
+      <br>💚
+    </button>
+    <button id="likeButton" type="submit">
+      like
+      <br>👍
+    </button>
+    <button id="commentButton" type="submit" onclick="displayCommentOption()">
+      comment
+      <br>💬
+    </button>
+  </div>
+  <div id="hiddenForm">
+    <form id="commentForm">
+      <label class="commentsLabel">Name</label><input type="text" name="nameOfUser" id="nameOfUser" required>
+      <label class="commentsLabel">Comment</label><input type="text" name="userComment" id="userComment" required>
+      <button type="submit" onclick="saveComment()">Add comment</button>
+    </form>
+  </div>
+  <div>
+    <table id="commentsTable"></table>
+  </div>
+  <script src="myScript.js"></script>
+</body>
+
+</html>

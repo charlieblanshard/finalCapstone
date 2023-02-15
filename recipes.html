@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Recipes-ChazCooks</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/chaz-cooks-logo.png">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div id="navGrid">
+      <div class="navElement">
+        <a class="navLink" href="index.html">Home</a>
+      </div>
+      <div class="navElement" id="rightNav">
+        <a class="navLink" href="about.html">About</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="resturants.html">Resturants</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="cookbooks.html">Cookbooks</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="gallery.html">Gallery</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="saveForLater.html">Saved</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Heading -->
+  <h1 id="heading">Recipes</h1>
+  <!-- Main Recipe Grid -->
+  <main>
+    <div class="recipeGrid">
+      <div class="recipeElement">
+        <img class="recipeImage" alt="Panzanella Salad" src="images/IMG-20221203-WA0051.jpg">
+        <a class="recipeLink" href="panzanellaRecipe.html">Panzanella Salad</a>
+        <div class="recipeDescription">-healthy — fresh — summery-</div>
+      </div>
+      <div class="recipeElement">
+        <img class="recipeImage" alt="Gnocchi with Green Veg and Pesto Baked" src="images/IMG-20221203-WA0048.jpg"><br>
+        <a class="recipeLink" href="gnocchiPrimavera.html">Gnocchi Primavera Bake</a>
+        <div class="recipeDescription">-comforting — green — healthy-</div>
+      </div>
+      <div class="recipeElement">
+        <img class="recipeImage" alt="Paneer Curry" src="images/IMG-20221203-WA0018.jpg"><br>
+        <a class="recipeLink" href="paneerCurry.html">Paneer Curry</a>
+        <div class="recipeDescription">
+          -winter warmer — freezable — bulk cooking-
+        </div>
+      </div>
+      <div class="recipeElement">
+        <img class="recipeImage" alt="Omelette" src="images/IMG-20221203-WA0054.jpg"><br>
+        <a class="recipeLink" href="omelette.html">Omelette </a>
+        <div class="recipeDescription">-quick — adaptable — easy-</div>
+      </div>
+      <div class="recipeElement">
+        <img class="recipeImage" alt="Vegetarian Chilli on a Wrap" src="images/IMG-20221203-WA0026.jpg"><br>
+        <a class="recipeLink" href="veggieChilli.html">Veggie Chilli</a>
+        <div class="recipeDescription">
+          -winter warmer — freezable — adaptable-
+        </div>
+      </div>
+      <div class="recipeElement">
+        <img class="recipeImage" alt="Vegetarian Shepards Pie" src="images/IMG-20221203-WA0020.jpg"><br>
+        <a class="recipeLink" href="shepardsPie.html">Vegetarian Shepard's Pie</a>
+        <div class="recipeDescription">
+          -freezable — comforting — healthy-
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="buttonGrid">
+    <button id="saveButton" type="submit" onclick="savePage()">
+      save
+      <br>💚
+    </button>
+    <button id="likeButton" type="submit">
+      like
+      <br>👍
+    </button>
+    <button id="commentButton" type="submit" onclick="displayCommentOption()">
+      comment
+      <br>💬
+    </button>
+  </div>
+  <div id="hiddenForm">
+    <form id="commentForm">
+      <label class="commentsLabel">Name</label><input type="text" name="nameOfUser" id="nameOfUser" required>
+      <label class="commentsLabel">Comment</label><input type="text" name="userComment" id="userComment" required>
+      <button type="submit" onclick="saveComment()">Add comment</button>
+    </form>
+  </div>
+  <div>
+    <table id="commentsTable"></table>
+  </div>
+  <script src="myScript.js"></script>
+</body>
+
+</html>

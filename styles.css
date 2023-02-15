@@ -1,0 +1,637 @@
+/* General */
+body {
+  font-family: Dejavu Sans, Arial, Verdana, sans-serif;
+
+  background-color: rgb(255, 242, 243, 0.5);
+}
+h1 {
+  text-align: center;
+  color: #245739;
+  padding: 10px;
+}
+
+h2 {
+  color: #245739;
+  margin-top: 0px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+}
+h3 {
+  font-weight: 500;
+}
+
+/* Navigation Bar on all Pages*/
+
+#navGrid {
+  display: flex;
+  grid-template-columns: repeat(13, 0.5fr);
+  max-width: 100%;
+  margin-top: 1%;
+
+  font-size: 1em;
+  grid-column-gap: 1em;
+  grid-auto-rows: 5%;
+  text-align: center;
+  font-family: Consolas, monaco, monospace;
+  padding: 0px 20px;
+}
+
+#rightNav {
+  margin-left: 65%;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #b56462;
+  border: #263938 solid 1px;
+  padding: 5px;
+  transition: all 150ms ease-in-out;
+}
+
+.navLink:hover {
+  font-weight: bold;
+  color: white;
+  background-color: #869f77;
+  border: #869f77 solid 1px;
+}
+
+/* 1. Home Page */
+/*  */
+/*  */
+
+/* Text */
+h3 {
+  margin: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: #245739;
+}
+
+.indexRecent {
+  color: #7f3938;
+  font-weight: 600;
+}
+
+/* Main Grid */
+.indexGrid {
+  padding: 20px;
+  display: flex;
+  margin: auto;
+  max-width: 70%;
+  grid-gap: 0px 0px;
+}
+
+.indexColumnLeft {
+  flex: 50%;
+  border-right: 1px grey solid;
+}
+
+.indexColumnRight {
+  flex: 50%;
+}
+
+.indexEach {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-top: 1px grey solid;
+}
+
+.indexEach2 {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-top: 1px grey solid;
+}
+
+/* Links */
+
+.indexLink {
+  font-family: Consolas, monaco, monospace;
+  color: #aa4e4c;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  transition: all 150ms ease-in-out;
+}
+
+.arrow {
+  font-size: 25px;
+}
+
+.indexLink:hover {
+  color: #245739;
+  font-weight: 700;
+}
+
+/* Subgrids*/
+.mini2grid {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  text-align: justify;
+  grid-gap: 10%;
+}
+
+.mini3grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: justify;
+}
+
+/* Images on main page */
+.mainImage {
+  width: 95%;
+  margin: auto;
+  display: block;
+  padding-bottom: 10px;
+}
+
+#meMain {
+  width: 80%;
+}
+
+#resturantMain {
+  max-width: 70%;
+  display: block;
+  margin: auto;
+}
+
+/* Submit Button and Newsletter Section*/
+
+#newsletter {
+  text-align: center;
+  margin: auto;
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+  padding: 20px 10px;
+  background-color: rgb(71, 127, 93, 0.8);
+  max-width: 70%;
+  margin-bottom: 20px;
+}
+
+#newsletterText {
+  font-size: 50px;
+  color: rgb(255, 242, 243);
+}
+
+label {
+  font-size: 18px;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: #245739 2px solid;
+  background-color: transparent;
+}
+
+input[type="submit"] {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: #245739;
+  font-weight: bold;
+  transition: all 150ms ease-in-out;
+}
+
+input[type="submit"]:hover {
+  color: white;
+}
+
+/* Feedback Button */
+.feedbackButton {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  background-color: #b56462;
+  border: #869f77 solid 1px;
+  font-family: Consolas, monaco, monospace;
+  padding: 5px;
+  transition: all 150ms ease-in-out;
+}
+
+.feedbackButton:hover {
+  background-color: #869f77;
+  border: #263938 solid 1px;
+}
+
+/* Feedback Page */
+/* 
+ */
+#feedbackPara {
+  text-align: center;
+  font-size: 20px;
+}
+
+.radioForm {
+  background-color: rgb(247, 214, 218);
+  margin-top: 20px;
+  margin-left: 40%;
+  margin-right: 40%;
+  padding: 5px 20px;
+}
+
+.radioCaption {
+  font-size: 18px;
+}
+
+#submitButton {
+  margin-left: 60%;
+  color: #b56462;
+  font-family: Consolas, monaco, monospace;
+  font-weight: 400;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  transition: all 150ms ease-in-out;
+}
+
+#submitButton:hover {
+  color: white;
+  background-color: #b56462;
+}
+
+/*2. Gallery */
+/*  */
+/*  */
+
+#quote {
+  text-align: center;
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+  font-weight: 400;
+  color: grey;
+  font-size: 18px;
+}
+
+/* Grid */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 24%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* 3. About */
+/*  */
+/*  */
+
+#aboutImg {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+}
+
+.aboutGrid {
+  display: grid;
+  padding: 10px 0px;
+  margin: 0px 250px;
+  border: #b56462 dashed 2px;
+  background-color: rgb(251, 230, 232);
+  grid-template-columns: 40% 60%;
+}
+
+/*4. Cookbook Table */
+/*  */
+/*  */
+
+#cookbookTable {
+  margin: auto;
+  max-width: 90%;
+  background-color: rgb(251, 230, 232);
+  margin-bottom: 50px;
+}
+
+.cookbookHeadings,
+.column1,
+.column2,
+.column3,
+.column4 {
+  padding: 10px;
+  border: grey solid 1px;
+}
+
+.cookbookHeadings {
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.column1 {
+  width: 10%;
+  font-weight: 400;
+  text-align: center;
+  color: #aa4e4c;
+  font-size: 18px;
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+}
+
+.column2 {
+  width: 20%;
+}
+
+.column3 {
+  width: 35%;
+}
+
+.column4 {
+  width: 20%;
+}
+.bookImg {
+  margin: auto;
+  max-width: 40%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: all 150ms ease-in-out;
+}
+
+.bookImg:hover {
+  max-width: 50%;
+}
+
+/*5. Resturants Page */
+/*  */
+/*  */
+
+.resturantsList {
+  margin: 10px 150px 40px 150px;
+}
+
+.resturantName {
+  font-size: 20px;
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+  color: #aa4e4c;
+  padding-top: 20px;
+}
+
+.resturantInfo {
+  font-size: 16px;
+  font-family: Dejavu Sans, Arial, Verdana, sans-serif;
+  color: black;
+}
+
+.resturantLink {
+  text-decoration: none;
+  font-size: 20px;
+  color: #245739;
+  font-weight: bold;
+  transition: all 150ms ease-in-out;
+}
+
+.resturantLink:hover {
+  font-size: 30px;
+}
+
+/*6. Recipes Page */
+/*  */
+/*  */
+
+h2 {
+  text-align: center;
+}
+
+.recipeImage {
+  width: 80%;
+  margin: 20px;
+}
+
+.recipeDescription {
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.recipeGrid {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: row;
+  max-width: 90%;
+  text-align: center;
+  margin: auto;
+  grid-gap: 15px;
+  margin-bottom: 50px;
+}
+
+.recipeElement {
+  border: solid #aa4e4c 1px;
+  padding: 10px;
+}
+
+.recipeLink {
+  text-decoration: none;
+  font-weight: 500;
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+  font-size: 18px;
+  color: #aa4e4c;
+  transition: all 150ms ease-in-out;
+}
+
+.recipeLink:hover {
+  color: #245739;
+}
+
+/*7. Individual Recipe Pages */
+/*  */
+/*  */
+
+.instructionsGrid {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 30% 15% 50%;
+  margin: auto;
+  max-width: 95%;
+  grid-gap: 30px;
+}
+
+.recipeImagePage {
+  margin: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.recipePageHeading {
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+  color: #aa4e4c;
+  font-weight: 500;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.recipeList {
+  list-style-type: circle;
+}
+
+.back2Recipes {
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+  color: #898989;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#backArrow {
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+  color: #245739;
+  font-size: 28px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 150ms ease-in-out;
+}
+
+#backArrow:hover {
+  font-size: 35px;
+  color: #aa4e4c;
+}
+
+#introPara {
+  padding: 0px 30px;
+  margin: 0% 20%;
+  text-align: center;
+}
+
+/* Contact Page */
+.contactContainer {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.contactElement {
+  margin: 30px 0px;
+}
+
+#contactButton {
+  background-color: #aa4e4c;
+  margin: auto;
+  display: block;
+  color: white;
+  font-weight: lighter;
+  transition: all 150ms ease-in-out;
+}
+
+#contactButton:hover {
+  background-color: #869f77;
+}
+
+/* Formatting for JavaScript */
+
+/* Save for Later Page */
+
+#savedImg {
+  margin: 10px 50px;
+}
+.saveImagePage {
+  max-width: 33%;
+}
+
+#clearSavedButton {
+  background-color: #b56362b9;
+  color: white;
+  font-size: 18px;
+  border: 0px;
+  font-weight: lighter;
+  padding: 10px 5px;
+  transition: all 150ms ease-in-out;
+  border-radius: 12px;
+}
+
+#clearSavedButton:hover {
+  color: black;
+}
+
+/* Comments Section */
+
+#commentsTable {
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.251);
+  border: grey solid 1px;
+  margin: auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#commentForm {
+  margin-right: 20%;
+  margin-left: 10%;
+}
+
+th,
+td {
+  border: grey solid 1px;
+  border-left: none;
+  border-right: none;
+}
+
+td {
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+#commentsBody {
+  font-weight: normal;
+}
+
+#hiddenForm {
+  display: none;
+}
+
+#nameOfUser,
+#userComment {
+  border: black;
+  background-color: rgba(128, 128, 128, 0.263);
+  padding-right: 10px;
+  height: 30px;
+}
+
+.commentsLabel {
+  margin-right: 10px;
+}
+
+#userComment {
+  width: 300px;
+}
+
+/* JavaScript Buttons */
+#buttonGrid {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  max-width: 98%;
+  font-size: 1em;
+  grid-row: 8em;
+  grid-column-gap: 1em;
+  text-align: center;
+}
+#saveButton {
+  grid-column-start: 16;
+}
+
+#saveButton,
+#likeButton,
+#commentButton {
+  color: #686969;
+  padding: 2px 0px;
+  transition: all 150ms ease-in-out;
+}
+
+#saveButton:hover,
+#likeButton:hover,
+#commentButton:hover {
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}

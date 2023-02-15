@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Resturants-ChazCooks</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/chaz-cooks-logo.png">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div id="navGrid">
+      <div class="navElement">
+        <a class="navLink" href="index.html">Home</a>
+      </div>
+      <div class="navElement" id="rightNav">
+        <a class="navLink" href="about.html">About</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="recipes.html">Recipes</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="cookbooks.html">Cookbooks</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="gallery.html">Gallery</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="saveForLater.html">Saved</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Headings -->
+  <h1 id="heading">Current Favourite Resturants in London</h1>
+  <h3>Last Updated: 7/12/22</h3>
+  <!-- Main Resturants List -->
+  <main>
+    <ol class="resturantsList">
+      <li class="resturantName">
+        Bubala
+        <ul class="resturantInfo">
+          <li>
+            Middle Eastern Vegetarian Feasts in Spitalfields and Soho. Ever
+            changing menu with vibrant seasonal dishes.
+          </li>
+          <li>
+            Charlie recommends-Hummus with harissa, Braised hispi, Smacked
+            cucumbers.
+          </li>
+          <li>
+            View here
+            <a class="resturantLink" target="_blank" href="https://bubala.co.uk/">➪</a>
+          </li>
+        </ul>
+      </li>
+      <li class="resturantName">
+        Zephyr Notting Hill
+        <ul class="resturantInfo">
+          <li>
+            Named after the Greek god of the West wind - a soft gentle breeze
+            - zēphyr offers a casual dining affair inspired by Grecian culture
+            and a late-night bar.
+          </li>
+          <li>
+            Charlie recommends- Bread Basket, Spicy Feta Spread, Aubergine
+            with citrus yoghurt.
+          </li>
+          <li>
+            View here
+            <a class="resturantLink" target="_blank" href="https://www.zephyr.london/">➪</a>
+          </li>
+        </ul>
+      </li>
+      <li class="resturantName">
+        Tonkotsu
+        <ul class="resturantInfo">
+          <li>
+            A small ramen chain situated all over London, Birmingham and
+            Brighton. Low-key but amazing place for Tonkotsu ramen. Tonkotsu
+            ramen is a ramen dish that originated in Fukuoka. This has great
+            choice for vegetarian ramen as well as other tasty dishes.
+          </li>
+          <li>
+            Charlie recommends- Prawn Gyozas, Japanese Mushroom Miso Ramen.
+          </li>
+          <li>
+            View here
+            <a class="resturantLink" target="_blank" href="https://tonkotsu.co.uk/">➪</a>
+          </li>
+        </ul>
+      </li>
+      <li class="resturantName">
+        Ozuki Sushi & Pan-Asian cuisine
+        <ul class="resturantInfo">
+          <li>
+            Cosy family-owned sushi resturant near Paddington Station.
+            Specialises in fresh hand-made Sushi and Pan-Asian style cuisines
+            from Japan, Korea, Thailand and Mongolia. All the ingredients are
+            freshly sourced from local markets. This is a great place for
+            sushi if you want to avoid the flash overpriced resturants.
+          </li>
+          <li>
+            Charlie recommends- Salmon Nigiri, Dragon Roll Uramaki, Crunchy
+            Vegan Uramaki.
+          </li>
+          <li>
+            View here
+            <a class="resturantLink" target="_blank" href="https://ozuki.uk/menus">➪</a>
+          </li>
+        </ul>
+      </li>
+      <li class="resturantName">
+        Sager and Wilde Wine Bar
+        <ul class="resturantInfo">
+          <li>
+            A small, intimate bar in situated on Hackney Road, serving amazing
+            wines and small plates. Sager and Wilde has 2 other branches but
+            the one on Hackney Road is the orignal one and has a special place
+            in my heart.
+          </li>
+          <li>
+            Charlie recommends-Cheese Plate, Jose Sardines, Cheddar, Sundried
+            Peppers, Smoked Chili Jam Toastie.
+          </li>
+          <li>
+            View here
+            <a class="resturantLink" target="_blank" href="https://www.sagerandwilde.com/hackney-road">➪</a>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </main>
+  <div id="buttonGrid">
+    <button id="saveButton" type="submit" onclick="savePage()">
+      save
+      <br>💚
+    </button>
+    <button id="likeButton" type="submit">
+      like
+      <br>👍
+    </button>
+    <button id="commentButton" type="submit" onclick="displayCommentOption()">
+      comment
+      <br>💬
+    </button>
+  </div>
+  <div id="hiddenForm">
+    <form id="commentForm">
+      <label class="commentsLabel">Name</label><input type="text" name="nameOfUser" id="nameOfUser" required>
+      <label class="commentsLabel">Comment</label><input type="text" name="userComment" id="userComment" required>
+      <button type="submit" onclick="saveComment()">Add comment</button>
+    </form>
+  </div>
+  <div>
+    <table id="commentsTable"></table>
+  </div>
+  <script src="myScript.js"></script>
+</body>
+
+</html>

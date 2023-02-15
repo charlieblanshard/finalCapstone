@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Veggie Shepards-ChazCooks</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/chaz-cooks-logo.png">
+</head>
+
+<body>
+  <!-- Navigation  -->
+  <nav>
+    <div id="navGrid">
+      <div class="navElement">
+        <a class="navLink" href="index.html">Home</a>
+      </div>
+      <div class="navElement" id="rightNav">
+        <a class="navLink" href="about.html">About</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="resturants.html">Resturants</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="cookbooks.html">Cookbooks</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="gallery.html">Gallery</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="saveForLater.html">Saved</a>
+      </div>
+    </div>
+    <div class="back2Recipes">
+      <a id="backArrow" href="recipes.html">⇦</a>Back to Recipes
+    </div>
+  </nav>
+  <!-- Heading -->
+  <h2 id="heading">Vegetarian Shepards Pie</h2>
+  <!-- Main -->
+  <main>
+    <p id="introPara">
+      A winter warming dish packed with vegetables. This dish freezes well, if
+      your freezer is tight for space you can freeze the lentil veg mix and
+      mash separate and reconstruct when defrosted.
+    </p>
+    <div class="instructionsGrid">
+      <div>
+        <img class="recipeImagePage" alt="Single portions of Vegetarian Shepards Pie"
+          src="images/IMG-20221203-WA0020.jpg">
+      </div>
+      <div class="recipePart1">
+        <div class="recipePageHeading">Ingredients</div>
+        <div>Serves 2</div>
+        <ul class="recipeList">
+          <li>1 large carrot</li>
+          <li>1 stick of celery</li>
+          <li>1 white onion</li>
+          <li>150g mushrooms</li>
+          <li>200g red lentils</li>
+          <li>100g peas</li>
+          <li>Tomato puree</li>
+          <li>2 sprigs of thyme</li>
+          <li>1 cup of red wine</li>
+          <li>900ml vegetable stock</li>
+          <li>50g butter</li>
+          <li>500g potatoes- used a mix of sweet and normal</li>
+          <li>60g of cheddar grated</li>
+        </ul>
+      </div>
+      <div class="recipePart2">
+        <div class="recipePageHeading">Instructions</div>
+        <p>
+          Peel and cut the potatoes into equal sizes. Boil the potatoes in a
+          pan for 10 minutes until potatoes are soft and breaking apart. Drain
+          the potatoes keeping a mug of the potato water. Return the potatoes
+          to the pan with a splash of the water to start, a glug of olive oil
+          and the butter. Mash the potatoes, adding more water if needed and
+          season with salt and pepper to taste.
+        </p>
+        <p>
+          Dice onion and celery and half of the carrot. Cut the other half
+          into half moons. Add to a pan with oil and fry for about 10 mins
+          until soft.
+        </p>
+        <p>
+          Roughly chop the mushrooms and add to the pan, continue to fry for 5
+          minutes. Add approximately two tbsp of tomato puree to the pan and
+          fry for 2 minutes until it begins to catch on the pan.
+        </p>
+        <p>
+          Deglaze the pan with the wine or stock if you aren't using wine. Let
+          the alcohol cook off for a few minutes then add the stock, the
+          lentils and the thyme. Allow to simmer for 20/25 minutes until the
+          lentil sauce has slightly reduced down.
+        </p>
+        <p>
+          Put the lentil mixture into an overproof dish, remove the thyme and
+          top with the mash. Spread the mash over with a fork so it's textured
+          and top with the cheese. Place under the grill for about ten minutes
+          until the cheese has melted and it's crispy on top.
+        </p>
+      </div>
+    </div>
+  </main>
+  <div id="buttonGrid">
+    <button id="saveButton" type="submit" onclick="savePage()">
+      save
+      <br>💚
+    </button>
+    <button id="likeButton" type="submit">
+      like
+      <br>👍
+    </button>
+    <button id="commentButton" type="submit" onclick="displayCommentOption()">
+      comment
+      <br>💬
+    </button>
+  </div>
+  <div id="hiddenForm">
+    <form id="commentForm">
+      <label class="commentsLabel">Name</label><input type="text" name="nameOfUser" id="nameOfUser" required>
+      <label class="commentsLabel">Comment</label><input type="text" name="userComment" id="userComment" required>
+      <button type="submit" onclick="saveComment()">Add comment</button>
+    </form>
+  </div>
+  <div>
+    <table id="commentsTable"></table>
+  </div>
+  <script src="myScript.js"></script>
+</body>
+
+</html>

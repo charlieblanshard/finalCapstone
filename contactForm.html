@@ -1,0 +1,72 @@
+<!-- Ideally would like this to be a popup form on the homepage -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Chaz Cooks-Contact</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/chaz-cooks-logo.png">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div id="navGrid">
+      <div class="navElement">
+        <a class="navLink" href="index.html">Home</a>
+      </div>
+      <div class="navElement" id="rightNav">
+        <a class="navLink" href="about.html">About</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="recipes.html">Recipes</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="resturants.html">Resturants</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="cookbooks.html">Cookbooks</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="gallery.html">Gallery</a>
+      </div>
+    </div>
+  </nav>
+  <h1>Contact</h1>
+  <div class="contactContainer">
+    <form action="/action_page.php">
+      <div class="contactElement">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+      <div class="contactElement">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+      <div class="contactElement">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="uk">UK</option>
+          <option value="europe">Europe</option>
+          <option value="asia">Asia</option>
+          <option value="northAmerica">North America</option>
+          <option value="southAmerica">South America</option>
+          <option value="australia">Australia</option>
+        </select>
+      </div>
+      <div class="contactElement">
+        <label for="subject">Subject</label>
+        <div style="margin-top: 20px">
+          <textarea id="subject" name="subject" placeholder="Write something.."
+            style="height: 200px; width: 300px"></textarea>
+        </div>
+      </div>
+      <input id="contactButton" type="submit" value="Send">
+    </form>
+  </div>
+  <script src="myScript.js"></script>
+</body>
+
+</html>

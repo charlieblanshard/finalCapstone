@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Saved- ChazCooks</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/chaz-cooks-logo.png">
+</head>
+
+<body onload="loadSaved()">
+  <!-- Navigation -->
+  <nav>
+    <div id="navGrid">
+      <div class="navElement">
+        <a class="navLink" href="index.html">Home</a>
+      </div>
+      <div class="navElement" id="rightNav">
+        <a class="navLink" href="about.html">About</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="recipes.html">Recipes</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="resturants.html">Resturants</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="cookbooks.html">Cookbooks</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="gallery.html">Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Heading -->
+  <h1>Saved Content</h1>
+  <p style="text-align:right"><button id="clearSavedButton" onclick="clearPage()">Delete all Saved Content</button></p>
+
+  <h3 style="text-align: left">Saved Pages</h3>
+  <!-- Main -->
+  <main>
+    <ul id="savedPages"></ul>
+    <h3 style="text-align: left">Saved Images</h3>
+    <p>
+      Click on an Image to delete it. To view more images please visit the
+      Gallery Page.
+    </p>
+    <div id="savedImg"></div>
+  </main>
+  <script src="myScript.js"></script>
+</body>
+
+</html>

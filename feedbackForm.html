@@ -1,0 +1,73 @@
+<!-- Ideally would like this to be a popup form on the homepage -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Chaz Cooks-Feedback</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/chaz-cooks-logo.png">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div id="navGrid">
+      <div class="navElement">
+        <a class="navLink" href="index.html">Home</a>
+      </div>
+      <div class="navElement" id="rightNav">
+        <a class="navLink" href="about.html">About</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="recipes.html">Recipes</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="resturants.html">Resturants</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="cookbooks.html">Cookbooks</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="gallery.html">Gallery</a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Feedback</h1>
+  <p id="feedbackPara">
+    Hope you've enjoyed the website and the recipes. Please provide some
+    feedback below. <br>Thanks Charlie
+    <span style="color: #b56462; font-size: 30px">♥</span>
+  </p>
+  <form class="radioForm" action="/action_page.php">
+    <p class="radioCaption">Have you enjoyed the website?</p>
+    <input type="radio">
+    <label>Yes</label><br>
+    <input type="radio">
+    <label>No</label><br>
+    <p class="radioCaption">What's been the best part of the website?</p>
+    <input type="radio">
+    <label>Inspiration</label><br>
+    <input type="radio">
+    <label>Recipes</label><br>
+    <input type="radio">
+    <label>New Resturants</label><br>
+    <input type="radio">
+    <label>Cookbooks</label><br>
+    <p class="radioCaption">
+      Which dietary requirement would you like more recipes for?
+    </p>
+    <input type="radio">
+    <label>Pescatarian</label><br>
+    <input type="radio">
+    <label>Vegan</label><br>
+    <input type="radio"> <label>Gluten Free</label><br>
+    <br>
+    <input id="submitButton" type="button" value="Submit ➪" onclick="feedbackAlert()">
+  </form>
+  <script src="myScript.js"></script>
+</body>
+
+</html>

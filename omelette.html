@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Omelette-ChazCooks</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/chaz-cooks-logo.png">
+</head>
+
+<body>
+  <!-- Navigation -->
+
+  <nav>
+    <div id="navGrid">
+      <div class="navElement">
+        <a class="navLink" href="index.html">Home</a>
+      </div>
+      <div class="navElement" id="rightNav">
+        <a class="navLink" href="about.html">About</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="resturants.html">Resturants</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="cookbooks.html">Cookbooks</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="gallery.html">Gallery</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="saveForLater.html">Saved</a>
+      </div>
+    </div>
+    <div class="back2Recipes">
+      <a id="backArrow" href="recipes.html">⇦</a>Back to Recipes
+    </div>
+  </nav>
+  <!-- Heading -->
+  <h2 id="heading">Cheesy Mushroom Omelette</h2>
+  <!-- Main Body -->
+  <main>
+    <p id="introPara">
+      Super easy and cheap but satisfying dish. The mushrooms can be swapped
+      with any veg here. Don't go too overboard on the veg as it'll be hard
+      for the omelette to form. This can be served as a main dish for any meal
+      or as pictured here with some tomato toast with avocado.
+    </p>
+    <div class="instructionsGrid">
+      <div>
+        <img class="recipeImagePage" alt="Cheesy Mushroom Omelette with some Tomato Toast and Avocado"
+          src="images/IMG-20221203-WA0071.jpg">
+      </div>
+      <div class="recipePart1">
+        <div class="recipePageHeading">Ingredients</div>
+        <div>Serves 1</div>
+        <ul>
+          <li>2 eggs</li>
+          <li>Handful of grated cheese- any hard cheese works well</li>
+          <li>
+            200g mushrooms. This can easily be subbed out for another veg.
+          </li>
+        </ul>
+      </div>
+      <div class="recipePart2">
+        <div class="recipePageHeading">Instructions</div>
+        <p>Whisk eggs.</p>
+        <p>
+          Heat a frying pan, this works better with a smaller pan so when the
+          egg is added it coats the whole pan.
+        </p>
+        <p>
+          Fry mushrooms on a low heat to enable the water to sweat out. Add a
+          pinch of salt once the liquid has come out. Remove the mushrooms
+          from the pan.
+        </p>
+        <p>
+          Add the eggs to the pan and swirl around so that the whole pan is
+          coated. Add the mushrooms on top.
+        </p>
+        <p>Cover the pan, if you do not have a lid you can use a plate.</p>
+      </div>
+    </div>
+  </main>
+  <div id="buttonGrid">
+    <button id="saveButton" type="submit" onclick="savePage()">
+      save
+      <br>💚
+    </button>
+    <button id="likeButton" type="submit">
+      like
+      <br>👍
+    </button>
+    <button id="commentButton" type="submit" onclick="displayCommentOption()">
+      comment
+      <br>💬
+    </button>
+  </div>
+  <div id="hiddenForm">
+    <form id="commentForm">
+      <label class="commentsLabel">Name</label><input type="text" name="nameOfUser" id="nameOfUser" required>
+      <label class="commentsLabel">Comment</label><input type="text" name="userComment" id="userComment" required>
+      <button type="submit" onclick="saveComment()">Add comment</button>
+    </form>
+  </div>
+  <div>
+    <table id="commentsTable"></table>
+  </div>
+  <script src="myScript.js"></script>
+</body>
+
+</html>

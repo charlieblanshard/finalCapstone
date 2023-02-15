@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Chaz Cooks</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/chaz-cooks-logo.png">
+</head>
+
+<body>
+  <!-- Navigation  Bar -->
+  <nav>
+    <div id="navGrid">
+      <div class="navElement" id="rightNav">
+        <a class="navLink" href="about.html">About</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="recipes.html">Recipes</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="resturants.html">Resturants</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="cookbooks.html">Cookbooks</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="gallery.html">Gallery</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="saveForLater.html">Saved</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Main Page Heading -->
+  <h1>
+    <img style="max-width: 4%" alt="Chaz Cooks Logo" src="images/chaz-cooks-logo.png"><br>Chaz Cooks
+  </h1>
+  <!-- Main Body Grid  -->
+  <main>
+    <div class="indexGrid">
+      <!-- Left Columns -->
+      <div class="indexColumnLeft">
+        <div class="indexEach">
+          <!-- Section 1- About Home -->
+          <h3>About Me</h3>
+          <div class="mini2grid">
+            <div>
+              Hi I'm Charlie. <br>I have always loved cooking but I really
+              developed a passion during lockdown. I spent loads of time
+              experimenting with recipes. Hope you can enjoy some of my
+              favourites. <br><a style="line-height: 6" class="indexLink" href="about.html">Read More <span
+                  class="arrow">➪</span></a>
+            </div>
+            <div>
+              <img id="meMain" alt="Photo of Charlie" src="images/me2.jpg">
+            </div>
+          </div>
+        </div>
+        <!-- Section 2- Cookbooks Home -->
+        <div class="indexEach">
+          <h3>Favourite Cookbooks</h3>
+          <p>
+            I get a lot of my inspiration from cookbooks, whether this is
+            direct recipes or ideas. You can't beat looking through a cookbook
+            at the amazing photos.
+          </p>
+          <div style="padding-top: 10px">
+            <span class="indexRecent">Recently Added-</span> Mob Fresh
+          </div>
+          Another great book released by Mob this year. These pictures are
+          amazing. <br>
+          <img class="mainImage" style="max-width: 60%" alt="Mob Fresh Cookbook Cover"
+            src="https://cdn.waterstones.com/bookjackets/large/9781/3997/9781399705059.jpg">
+          <br><a class="indexLink" href="cookbooks.html">View other favourite cookbooks<span class="arrow">➪</span></a>
+        </div>
+        <!-- Section 3- Extra Cooking Images -->
+        <div class="indexEach">
+          <h3>More Cooking</h3>
+          <div class="mini3grid">
+            <img style="max-width: 100%" alt="Vodka Rigatoni" class="mainImage2" src="images/IMG-20221203-WA0029.jpg">
+            <img style="max-width: 100%" alt="Greek Salad" src="images/PXL_20220814_172257293main.jpg">
+          </div>
+        </div>
+      </div>
+      <!-- Right Columns -->
+      <div class="indexColumnRight">
+        <div class="indexEach2">
+          <!-- Section 1- Recipes Home -->
+          <h3>Recipes</h3>
+          <div style="padding-bottom: 30px">
+            A variety of recipes for all occassions. These are some of my
+            favourite recipes, some of them I just knocked together, some had
+            more planning but I make them on rotation now.
+          </div>
+          <a class="indexLink" href="recipes.html">View all recipes <span class="arrow">➪</span></a>
+          <br>
+        </div>
+        <div>
+          <div style="
+                font-family: Optima Segoe, Segoe UI, Candara, Calibri, Arial,
+                  sans-serif;
+              " class="indexEach2">
+            <span class="indexRecent">Recently Added-</span> Gnocchi Primavera
+            Bake<a class="indexLink" href="gnocchiPrimavera.html"><span class="arrow"> ➪</span></a>
+          </div>
+          <img class="mainImage" alt="Gnocchi Primavera Bake" src="images/IMG-20221203-WA0048-V2.jpg">
+        </div>
+        <!-- Section 2- Favourite Resturants -->
+        <div class="indexEach2">
+          <h3>Favourite Resturants</h3>
+          Visit some of my favourite resturants in London
+          <a class="indexLink" href="resturants.html"><span class="arrow">➪</span></a>
+          <div style="padding-bottom: 10px; padding-top: 15px">
+            <span class="indexRecent">Last Add-</span> Bubala-Spitalfields
+          </div>
+          <div>
+            A vegetarian and vegan middle easten resturant. Serving a wide
+            variety of delicious small plates.
+          </div>
+          <br><img id="resturantMain" alt="Food Served at Bubala"
+            src="
+      https://media.tatler.com/photos/62f645626ef6fb00fbc25685/16:9/w_1920,h_1080,c_limit/Bubala_120822_BubalaWeTheFoodSnobsHighRes-273.jpg">
+        </div>
+        <div class="indexEach2">
+          <!-- Section 3- Coming Soon -->
+          <h3>Coming Soon...</h3>
+          Top tips for batch cooking to save time and money but still eat
+          delicious food. <br>
+          Lentil Spag Bol Base which is super adaptable and can be made into
+          lasagne or moussaka, a great freezer favourite which does not get
+          boring.
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Subscribe to Newsletter Bar -->
+  <div id="newsletter">
+    <span id="newsletterText"> subscribe to our monthly newsletter</span>
+    <form style="padding-top: 25px">
+      <label for="fname">First name: </label>
+      <input type="text" id="fname">
+      <label for="eaddress">Email address: </label>
+      <input type="text" id="eaddress">
+      <input type="submit" value="subscribe">
+    </form>
+  </div>
+
+  <p style="text-align: right">
+    <button class="feedbackButton" onclick="window.location.href='contactForm.html';">
+      Contact
+    </button>
+    <button class="feedbackButton" onclick="window.location.href='feedbackForm.html';">
+      Feedback
+    </button>
+  </p>
+  <script src="myScript.js"></script>
+</body>
+
+</html>

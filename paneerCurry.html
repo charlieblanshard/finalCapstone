@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Paneer Curry-ChazCooks</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/chaz-cooks-logo.png">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div id="navGrid">
+      <div class="navElement">
+        <a class="navLink" href="index.html">Home</a>
+      </div>
+      <div class="navElement" id="rightNav">
+        <a class="navLink" href="about.html">About</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="resturants.html">Resturants</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="cookbooks.html">Cookbooks</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="gallery.html">Gallery</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="saveForLater.html">Saved</a>
+      </div>
+    </div>
+    <div class="back2Recipes">
+      <a id="backArrow" href="recipes.html">⇦</a>Back to Recipes
+    </div>
+  </nav>
+  <!-- Heading -->
+  <h2 id="heading">Paneer, Spinach and Pea Curry</h2>
+  <!-- Main Body -->
+  <main>
+    <p id="introPara">
+      Fairly easy but super impressive dish to cook for a large number or
+      guests, or make a batch and freeze the leftovers.
+    </p>
+    <div class="instructionsGrid">
+      <div>
+        <img class="recipeImagePage" alt="Paneer, Spinach and Pea Curry with Rice" src="images/IMG-20221203-WA0018.jpg">
+      </div>
+      <div class="recipePart1">
+        <div class="recipePageHeading">Ingredients</div>
+        <div>Serves 4</div>
+        <ul>
+          <li>240g Basmati Rice or naan breads</li>
+          <li>200g of Paneer</li>
+          <li>200g of Spinach</li>
+          <li>200g Peas</li>
+          <li>2 tin of chopped tomatoes</li>
+          <li>1 white onion</li>
+          <li>4 cloves of garlic</li>
+          <li>1 tsp fresh ginger</li>
+          <li style="
+                margin-bottom: 0px;
+                list-style: none;
+                font-weight: bold;
+                margin-top: 10px;
+              ">
+            Spices
+          </li>
+          <li>2 tsp Turmeric</li>
+          <li>2 tsp Cumin</li>
+          <li>2 tsp curry powder</li>
+          <li>2 tsp dried Coriander</li>
+          <li>2 tsp Chilli powder-mild or hot</li>
+        </ul>
+      </div>
+      <div class="recipePart2">
+        <div class="recipePageHeading">Instructions</div>
+        <p>
+          Mix the spices on a plate. Cut the paneer into cubes and coat in the
+          spices. Heat oil in the pan and add the paneer, turn occasionally
+          until the sides are brown. Remove from the pan and leave on kitchen
+          roll to drain the oil.
+        </p>
+        <p>Boil the kettle and</p>
+        <p>
+          Chop the onion and garlic. If you have a blender, blend the onion,
+          garlic and ginger. Add the frying pan with any remaining spices and
+          fry until soft.
+        </p>
+        <p>
+          Stir in the chopped tomatoes and 200ml of water. Bring to boil and
+          leave to simmer.
+        </p>
+        <p>Add the frozen peas and let the sauce reboil.</p>
+        <p>
+          Add the paneer back to the pan with the spinach and cook until the
+          spinach wilts.
+        </p>
+        <p>Serve with the rice and enjoy.</p>
+      </div>
+    </div>
+  </main>
+  <div id="buttonGrid">
+    <button id="saveButton" type="submit" onclick="savePage()">
+      save
+      <br>💚
+    </button>
+    <button id="likeButton" type="submit">
+      like
+      <br>👍
+    </button>
+    <button id="commentButton" type="submit" onclick="displayCommentOption()">
+      comment
+      <br>💬
+    </button>
+  </div>
+  <div id="hiddenForm">
+    <form id="commentForm">
+      <label class="commentsLabel">Name</label><input type="text" name="nameOfUser" id="nameOfUser" required>
+      <label class="commentsLabel">Comment</label><input type="text" name="userComment" id="userComment" required>
+      <button type="submit" onclick="saveComment()">Add comment</button>
+    </form>
+  </div>
+  <div>
+    <table id="commentsTable"></table>
+  </div>
+  <script src="myScript.js"></script>
+</body>
+
+</html>

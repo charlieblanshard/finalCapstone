@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Vegetarian Chilli-ChazCooks</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/chaz-cooks-logo.png">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div id="navGrid">
+      <div class="navElement">
+        <a class="navLink" href="index.html">Home</a>
+      </div>
+      <div class="navElement" id="rightNav">
+        <a class="navLink" href="about.html">About</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="resturants.html">Resturants</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="cookbooks.html">Cookbooks</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="gallery.html">Gallery</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="saveForLater.html">Saved</a>
+      </div>
+    </div>
+    <div class="back2Recipes">
+      <a id="backArrow" href="recipes.html">⇦</a>Back to Recipes
+    </div>
+  </nav>
+
+  <!-- Heading -->
+  <h2 id="heading">Vegetarian Chilli</h2>
+  <!-- Main -->
+  <main>
+    <p id="introPara">
+      This is a super versitile dish, good for all year round and it freezes
+      well. It can be served with rice to make the dish more hearty, a wrap to
+      make it more fresh or nachos for a great party dish.
+    </p>
+    <div class="instructionsGrid">
+      <div>
+        <img class="recipeImagePage" alt="Vegetarian Chilli on a Wrap with Sour Cream and Lettuce"
+          src="images/IMG-20221203-WA0026.jpg">
+      </div>
+      <div class="recipePart1">
+        <div class="recipePageHeading">Ingredients</div>
+        <div>Serves 4</div>
+        <ul>
+          <li>1 large onion</li>
+          <li>2 bell pepper</li>
+          <li>3 garlic cloves</li>
+          <li>1 tbsp smoked paprika</li>
+          <li>1 tsp cumin</li>
+          <li>1 tsp chilli powder</li>
+          <li>2 tins kidney beans</li>
+          <li>2 fresh chillis</li>
+          <li>2 tins chopped tomatoes</li>
+          <li>1 cube of dark chocolate</li>
+          <li>lime</li>
+          <li>Sour cream and cheese to serve</li>
+        </ul>
+      </div>
+      <div class="recipePart2">
+        <div class="recipePageHeading">Instructions</div>
+        <p>
+          Dice onion, chop pepper into small cubes, mince the garlic and
+          finely chop chillis. Heat some oil in a large frying pan and add the
+          onion and pepper. Fry for about 5 minutes until soft and onion is
+          translucent.
+        </p>
+        <p>
+          Add the garlic, paprika, cumin, chilli powder and chillis and fry
+          for another 5 minutes.
+        </p>
+        <p>
+          Add the beans with their water and the tomatoes to the pan. Stir
+          thoroughly to ensure all veg is mixed in to the sauce. Add the
+          chocolate. Let the chilli simmer for 20-25 mins stirring
+          occasionally. If the sauce starts to get too thick add a bit of
+          water.
+        </p>
+        <p>Serve with desired carb and top with soured cream and cheese.</p>
+      </div>
+    </div>
+  </main>
+  <div id="buttonGrid">
+    <button id="saveButton" type="submit" onclick="savePage()">
+      save
+      <br>💚
+    </button>
+    <button id="likeButton" type="submit">
+      like
+      <br>👍
+    </button>
+    <button id="commentButton" type="submit" onclick="displayCommentOption()">
+      comment
+      <br>💬
+    </button>
+  </div>
+  <div id="hiddenForm">
+    <form id="commentForm">
+      <label class="commentsLabel">Name</label><input type="text" name="nameOfUser" id="nameOfUser" required>
+      <label class="commentsLabel">Comment</label><input type="text" name="userComment" id="userComment" required>
+      <button type="submit" onclick="saveComment()">Add comment</button>
+    </form>
+  </div>
+  <div>
+    <table id="commentsTable"></table>
+  </div>
+  <script src="myScript.js"></script>
+</body>
+
+</html>

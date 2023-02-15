@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cookbooks-ChazCooks</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/chaz-cooks-logo.png">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div id="navGrid">
+      <div class="navElement">
+        <a class="navLink" href="index.html">Home</a>
+      </div>
+      <div class="navElement" id="rightNav">
+        <a class="navLink" href="about.html">About</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="recipes.html">Recipes</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="resturants.html">Resturants</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="gallery.html">Gallery</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="saveForLater.html">Saved</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Heading -->
+  <h1 id="heading">Favourite Cookbooks</h1>
+  <!-- Cookbook Table -->
+  <table id="cookbookTable">
+    <tr>
+      <th class="cookbookHeadings">Name of Cookbook</th>
+      <th class="cookbookHeadings">Cookbook</th>
+      <th class="cookbookHeadings">Description</th>
+      <th class="cookbookHeadings">Comments</th>
+    </tr>
+    <tr>
+      <td class="column1">Mob Fresh</td>
+      <td class="column2">
+        <a class="bookLink" href="https://www.amazon.co.uk/Fresh-Mob-tasty-healthy-ish-recipes/dp/1399705059">
+          <img class="bookImg" alt="Mob Fresh Cookbook Cover"
+            src="https://cdn.waterstones.com/bookjackets/large/9781/3997/9781399705059.jpg"></a>
+      </td>
+      <td class="column3">
+        The freshest recipes from the team at Mob - Fresh Mob is packed with
+        100 of our favourite dishes that are tasty, filling and nourishing.
+        Fresh Mob shares balanced meals that celebrate the textures and
+        flavours that make food great. Lots of veg, lots of protein, lots of
+        nutrients, lots of food that will leave you feeling good and
+        satisfied. These are recipes to make every day delicious.
+      </td>
+      <td class="column4">
+        Although this book isn't fully vegetarian it provides loads of
+        inspiration and adaptable recipes.
+      </td>
+    </tr>
+    <tr>
+      <td class="column1">East</td>
+      <td class="column2">
+        <a class="bookLink"
+          href="https://www.amazon.co.uk/East-Vegetarian-recipes-Bangalore-Beijing/dp/0241387566/ref=sr_1_1?crid=Q578QY30ROY5&keywords=east&qid=1670964104&s=books&sprefix=east%2Cstripbooks%2C99&sr=1-1">
+          <img class="bookImg" alt="East Cookbook Cover"
+            src="https://www.deliciousmagazine.co.uk/wp-content/uploads/2019/09/meera-sodha-cover.jpg"></a>
+      </td>
+      <td class="column3">
+        120 Easy and Delicious Asian-inspired Vegetarian and Vegan recipes.
+        There are seasonal specialities, warming noodles and curries, tofu and
+        rice dishes as well as salads, sides and sweets - all practical and
+        surprisingly easy to make - and bursting with exciting flavours.
+      </td>
+      <td class="column4">
+        So many amazing recipes, easy to follow and not too many ingredients.
+        I love this cook book as I find it harder to freestyle Asian food.
+      </td>
+    </tr>
+    <tr>
+      <td class="column1">Plenty</td>
+      <td class="column2">
+        <a class="bookLink"
+          href="https://www.amazon.co.uk/Plenty-Yotam-Ottolenghi/dp/0091933684/ref=sr_1_1?crid=1QNG1ED5H0X5B&keywords=plenty+ottolenghi&qid=1670964234&s=books&sprefix=plenty%2Cstripbooks%2C189&sr=1-1">
+          <img class="bookImg" alt="Plenty Cookbook Cover"
+            src="https://pictures.abebooks.com/isbn/9780091933685-uk.jpg"></a>
+      </td>
+      <td class="column3">
+        One of Ottolenghi's vegetarian cookbooks. The food inspiration comes
+        from his strong Mediterranean background and his unapologetic love of
+        ingredients. With sections devoted to cooking greens, aubergines,
+        brassicas, rice and cereals, pasta and couscous, pulses, roots,
+        squashes, onions, fruit, mushrooms and tomatoes, the breadth of
+        colours, tastes and textures is extraordinary.
+      </td>
+      <td class="column4">
+        Sometimes Ottolenghi's recipes are very ingredient heavy but this
+        cookbook has affordable recipes and does not require trekking around
+        to loads of shops for ingredients!
+      </td>
+    </tr>
+    <tr>
+      <td class="column1">The Green Roasting Tin</td>
+      <td class="column2">
+        <a class="bookLink"
+          href="https://www.amazon.co.uk/Green-Roasting-Tin-Vegetarian-Dinners/dp/1910931896/ref=sr_1_1?crid=30E1LRFPRM73P&keywords=the+green+roasting+tin+cookbook&qid=1670964306&s=books&sprefix=the+green+ro%2Cstripbooks%2C112&sr=1-1">
+          <img class="bookImg" alt="The Green Roasting Tin Cookbook Cover"
+            src="https://blackwells.co.uk/jacket/l/9781910931899.jpg"></a>
+      </td>
+      <td class="column3">
+        Seventy-five easy one-tin recipes: half vegan, half vegetarian, all
+        delicious. With every meal in this book, you simply pop your
+        ingredients in a tin and let the oven do the work.
+      </td>
+      <td class="column4">Amazing recipes for the working week.</td>
+    </tr>
+  </table>
+  <div id="buttonGrid">
+    <button id="saveButton" type="submit" onclick="savePage()">
+      save
+      <br>💚
+    </button>
+    <button id="likeButton" type="submit">
+      like
+      <br>👍
+    </button>
+    <button id="commentButton" type="submit" onclick="displayCommentOption()">
+      comment
+      <br>💬
+    </button>
+  </div>
+  <div id="hiddenForm">
+    <form id="commentForm">
+      <label class="commentsLabel">Name</label><input type="text" name="nameOfUser" id="nameOfUser" required>
+      <label class="commentsLabel">Comment</label><input type="text" name="userComment" id="userComment" required>
+      <button type="submit" onclick="saveComment()">Add comment</button>
+    </form>
+  </div>
+  <div>
+    <table id="commentsTable"></table>
+  </div>
+  <script src="myScript.js"></script>
+</body>
+
+</html>

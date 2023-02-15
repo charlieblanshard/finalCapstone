@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Recipes-ChazCooks</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/chaz-cooks-logo.png">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div id="navGrid">
+      <div class="navElement">
+        <a class="navLink" href="index.html">Home</a>
+      </div>
+      <div class="navElement" id="rightNav">
+        <a class="navLink" href="about.html">About</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="resturants.html">Resturants</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="cookbooks.html">Cookbooks</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="gallery.html">Gallery</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="saveForLater.html">Saved</a>
+      </div>
+    </div>
+    <div class="back2Recipes">
+      <a id="backArrow" href="recipes.html">⇦</a>Back to Recipes
+    </div>
+  </nav>
+  <!-- Heading -->
+  <h2 id="heading">Panzanella Salad</h2>
+  <!-- Main -->
+  <main>
+    <p id="introPara">
+      Panzanella is a Tuscan salad which uses stale bread and ripe summer
+      tomatoes. Usually enjoyed with mozzerella but feta makes a lovely twist.
+      I'd be happy if I was served this dish in a resturant it's so good and
+      it's always gone down a treat with others.
+    </p>
+    <div class="instructionsGrid">
+      <div>
+        <img class="recipeImagePage" alt="Panzanella Salad in a Bowl" src="images/IMG-20221203-WA0051.jpg">
+      </div>
+      <div class="recipePart1">
+        <div class="recipePageHeading">Ingredients</div>
+        <div>Serves 2</div>
+        <ul>
+          <li>Butternut Squash 300g</li>
+          <li>1 Bell Pepper</li>
+          <li>1 bunch Flat Leaf Parsley</li>
+          <li>1 Ciabatta Roll</li>
+          <li>1 bag of Rocket</li>
+          <li>1 Red Onion</li>
+          <li>1 large Garlic Clove</li>
+          <li>1 punnet Plum Tomatoes</li>
+          <li>1/2 Lemon</li>
+          <li>100g Feta Cheese</li>
+          <li>2 Tablespoons of Capers</li>
+          <li>Chilli Flakes- to taste</li>
+        </ul>
+      </div>
+      <div class="recipePart2">
+        <div class="recipePageHeading">Instructions</div>
+        <p>
+          Preheat the oven to 200°C. Dice butternut squashand place on a large
+          baking tray, drizzle with a little oil and season with salt and
+          pepper and mix to coat the butternut. Roast on the top shelf of the
+          oven for 25-30 mins in total until soft.
+        </p>
+        <p>
+          Halve the tomatoes. When the squash has been in the oven for 10
+          mins, turn the squash and add the tomatoes to the tray with another
+          drizzle of oil if needed. Return to the oven for the remainder of
+          the cooking time.
+        </p>
+        <p>
+          Peel and thinly slice the onion. Halve the pepper and slice into
+          thin strips. Heat a splash of oil in a large frying pan over a
+          medium-low heat and add the onion and pepper to the pan. Cook until
+          the peppers and onion are really soft approx 10-15mins.
+        </p>
+
+        <p>
+          Tear the ciabatta into small, bite-size pieces. Put the ciabatta on
+          another baking tray with a drizzle of oil and a pinch of salt and
+          mix. Bake in the the oven until golden and crispy, 8-10 mins. Give
+          the tray a shake halfway through so the bread does not catch.
+        </p>
+
+        <p>
+          Zest then halve the lemon and dice the capers. Make the dressing by
+          combining the olive oil (about 2 tbs), parsley, capers, lemon zest
+          and half the lemon juice. Season with salt and pepper, mix well and
+          set aside.
+        </p>
+
+        <p>
+          When the peppers are soft, stir in the garlic and cook for a minute
+          more. Remove from the heat and add to the bowl with the dressing.
+          Once ready, remove the veggies and croutons from the oven, add to
+          the bowl and gently mix. Let the bowl sit for a couple minutes so
+          everything can absorb! Add the rocket then divide between bowls and
+          crumble the feta over the top.
+        </p>
+      </div>
+    </div>
+  </main>
+  <div id="buttonGrid">
+    <button id="saveButton" type="submit" onclick="savePage()">
+      save
+      <br>💚
+    </button>
+    <button id="likeButton" type="submit">
+      like
+      <br>👍
+    </button>
+    <button id="commentButton" type="submit" onclick="displayCommentOption()">
+      comment
+      <br>💬
+    </button>
+  </div>
+  <div id="hiddenForm">
+    <form id="commentForm">
+      <label class="commentsLabel">Name</label><input type="text" name="nameOfUser" id="nameOfUser" required>
+      <label class="commentsLabel">Comment</label><input type="text" name="userComment" id="userComment" required>
+      <button type="submit" onclick="saveComment()">Add comment</button>
+    </form>
+  </div>
+  <div>
+    <table id="commentsTable"></table>
+  </div>
+  <script src="myScript.js"></script>
+</body>
+
+</html>

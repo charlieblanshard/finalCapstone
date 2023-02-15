@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Gallery-Chaz Cooks</title>
+  <meta charset="UTF-8">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/chaz-cooks-logo.png">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div id="navGrid">
+      <div class="navElement">
+        <a class="navLink" href="index.html">Home</a>
+      </div>
+      <div class="navElement" id="rightNav">
+        <a class="navLink" href="about.html">About</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="recipes.html">Recipes</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="resturants.html">Resturants</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="cookbooks.html">Cookbooks</a>
+      </div>
+      <div class="navElement">
+        <a class="navLink" href="saveForLater.html">Saved</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Heading -->
+  <h1>Recent Cooking</h1>
+  <!-- Picture Gallery -->
+  <p id="quote">
+    <q>Food may be essential as fuel for the body, but good food is fuel for
+      the soul</q>-Malcom Forbes
+  </p>
+  <div class="gallery">
+    <div class="column">
+      <img class="galleryImage" alt="Panzanella Salad" src="images/IMG-20221203-WA0051.jpg">
+      <img class="galleryImage" alt="Gnocchi Primavera" src="images/IMG-20221203-WA0048.jpg">
+      <img class="galleryImage" alt="Sweet Potato and Grain Nourish Bowl" src="images/IMG-20221203-WA0062.jpg">
+      <img class="galleryImage" alt="Gnocchi with Roasted Peppers and Ricotta" src="images/IMG-20221203-WA0032.jpg">
+    </div>
+    <div class="column">
+      <img class="galleryImage" alt="Omelette with Avocado Potato Waffles" src="images/IMG-20221203-WA0054.jpg">
+      <img class="galleryImage" alt="Paneer, Spinach and Pea Curry" src="images/IMG-20221203-WA0018.jpg">
+      <img class="galleryImage" alt="Vegetarian Shepards Pie" src="images/IMG-20221203-WA0020.jpg">
+      <img class="galleryImage" alt="Vegetarian Chilli" src="images/IMG-20221203-WA0026.jpg">
+    </div>
+    <div class="column">
+      <img class="galleryImage" alt="Baked Miso Aubergine" src="images/IMG-20221203-WA0017.jpg">
+      <img class="galleryImage" alt="Singapore Noodles" src="images/IMG-20221203-WA0065.jpg">
+      <img class="galleryImage" alt="Prawn and Courgette Rigatoni" src="images/IMG-20221203-WA0037.jpg">
+      <img class="galleryImage" alt="Tomato Gnocchi with Courgettes and Rocket" src="images/IMG-20221203-WA0056.jpg">
+    </div>
+    <div class="column">
+      <img class="galleryImage" alt="Vegetarian Chow Mein with Tofu and Greens" src="images/IMG-20221203-WA0045.jpg">
+      <img class="galleryImage" alt="Mushroom Omelette" src="images/IMG-20221203-WA0071.jpg">
+      <img class="galleryImage" alt="Vodka Rigatoni" src="images/IMG-20221203-WA0029.jpg">
+      <img class="galleryImage" alt="Greek Salad" src="images/PXL_20220814_172257293.jpg">
+    </div>
+  </div>
+  <div id="buttonGrid">
+    <button id="saveButton" type="submit" onclick="savePage()">
+      save
+      <br>💚
+    </button>
+    <button id="likeButton" type="submit">
+      like
+      <br>👍
+    </button>
+    <button id="commentButton" type="submit" onclick="displayCommentOption()">
+      comment
+      <br>💬
+    </button>
+  </div>
+  <div id="hiddenForm">
+    <form id="commentForm">
+      <label class="commentsLabel">Name</label><input type="text" name="nameOfUser" id="nameOfUser" required>
+      <label class="commentsLabel">Comment</label><input type="text" name="userComment" id="userComment" required>
+      <button type="submit" onclick="saveComment()">Add comment</button>
+    </form>
+  </div>
+  <div>
+    <table id="commentsTable"></table>
+  </div>
+  <script src="myScript.js"></script>
+</body>
+
+</html>
